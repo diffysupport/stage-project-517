@@ -43,7 +43,7 @@ advanced:
         - { value: '', header: '' }
     cookies: ''
     custom_js: "const list = document.querySelector('.jumplink-menu__list');\n\n  const links = list.querySelectorAll('a');\n\n  links.forEach((a, i) => {\n    const isFirst = i === 0;\n    a.classList.toggle('current', isFirst);\n    a.setAttribute('aria-current', String(isFirst));\n  });"
-    custom_css: ''
+    custom_css: ".wp-embed-responsive .wp-has-aspect-ratio iframe {\n\tposition: unset !important;\n}"
     mock_content:
         - { type: title, selector: '' }
     sensitivity: 15
