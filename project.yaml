@@ -47,10 +47,10 @@ advanced:
     headers:
         - { value: '', header: '' }
     cookies: ''
-    custom_js: "const list = document.querySelector('.jumplink-menu__list');\n  if (!list) return;                       // stop if the menu isn’t on the page\n\n  const links = list.querySelectorAll('a');\n\n  links.forEach((a, i) => {\n    const isFirst = i === 0;               // only the first link gets “current”\n    a.classList.toggle('current', isFirst);\n    a.setAttribute('aria-current', String(isFirst));\n  });"
+    custom_js: "const list = document.querySelector('.jumplink-menu__list');\n\n  const links = list.querySelectorAll('a');\n\n  links.forEach((a, i) => {\n    const isFirst = i === 0;\n    a.classList.toggle('current', isFirst);\n    a.setAttribute('aria-current', String(isFirst));\n  });"
     custom_css: ''
     mock_content:
-        - { selector: '', type: title }
+        - { type: title, selector: '' }
     sensitivity: 15
     night_mode: false
     retina_images: false
