@@ -10,13 +10,8 @@ basic:
         development: { user: '', password: '' }
     breakpoints:
         - 640
-        - 760
-        - 768
         - 1024
-        - 1080
         - 1200
-        - 1440
-        - 1920
     pages:
         - /
         - /site-updates
